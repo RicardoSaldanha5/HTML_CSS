@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5.</title>
+</head>
+<body>
+    <h1>Inserir vídeos hospedados localmente.</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video width="200" poster="imagens/idade média.png" controls>
+        <source src="midia/Meuvideo.mkv" type="video/mkv">
+        <source src="midia/meuvideo.mp4" type="video/mp4">
+        <source src="midia/Meuvideo.webm" type="video/webm">
+        <source src="midia/meuvideo.m4v" type="video/mp4">
+        <source src="midia/meuvideo.ogv" type="video/ogg"> <!--existem vários formatos e convém colocar todos possíveis pela ordem de peso do menos para o mais pesado-->
+        <p>caso o navegador não seja compatível com os vídeos.</p>
+    </video>
+    <h1>Inserir vídeo do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nSsDvqkKYho?si=AU6aJO6ZNm1F0n7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
