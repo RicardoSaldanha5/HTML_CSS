@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício de teste de fundo</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             height: 100vh;
-            background-color: black;background-image: url(imagens/wallpaper002.jpg);
-            background-repeat: no-repeat;
-            background-position: center center;
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
             background-size: cover;
+
+            /*short-hand background
+            color > image > position > repeat > [size] > attachment
+            
+            background-color: black;background-image: url(imagens/wallpaper002.jpg);background-position: center center;
+            background-repeat: no-repeat;
+            [background-size: cover;]background-attachment: fixed;
+            */  
         }
         main h1{
             color: blue;
@@ -24,7 +30,7 @@
             
             background-color: white;
             border-radius: 10px;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.342);
