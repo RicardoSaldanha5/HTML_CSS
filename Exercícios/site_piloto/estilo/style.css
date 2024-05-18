@@ -128,7 +128,7 @@ section.imagem{
 section.imagem>p{
     width: 320px;
     background-color: rgba(0, 0, 0, 0.452);
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
 }
 section#img01{
@@ -136,8 +136,6 @@ section#img01{
     background-position: right center;
     background-size: cover;
     background-repeat: no-repeat;
-    
-
 }
 section#img02{
     background-image: url(../imagens/img02.jpg);
