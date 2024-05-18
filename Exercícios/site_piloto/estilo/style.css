@@ -10,41 +10,135 @@
 
     --font-padrao: Arial, Verdana, Helvetica, sans-serif;
 }
-    
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
 
 body{
-    background-color: black;
     font-family: var(--font-padrao);
 }
 header{
-    background-image: linear-gradient(to top, var(--cor4), var(--cor2));
+    background-color: var(--cor5);
     min-height: 150px;
     text-align: center;
     padding-top: 20px;
 }
 header h1{
-    color: white;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    color: var(--cor3);
+    font-variant: small-caps;
+    font-size: 3em;
+    text-shadow: 3px 3px 3px #e0dfdb49;
 }
 header p{
     color: white;
+    padding-bottom: 30px;
+    text-shadow: 3px 3px 2px #e0dfdb38;
+    font-size: 0.9em;
 }
-main{
+header a{
+    text-decoration: none;
+    color: white; 
+}
+header a:hover{
+    color: var(--cor5);
+    background-color: var(--cor3);
+    border-radius: 3px;
+    transition-duration: 1s;
+    padding: 3px;
+}
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    text-align: left;
+    font-size: 0.8em;
+}
+nav>a{
+    color: var(--cor2);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav>a:hover{
+    background-color: var(--cor4);
+    color: var(--cor3);
+    border-radius: 5px;
+    transition-duration: 1.5s;
+}
+h1.titulo{
+    color: var(--cor4);
+    padding: 0px;
+    padding-bottom: 15px;
+    text-indent: 0px;
+    font-size: 1.5em;
+    
+}
+section{
+    padding-top: 7vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    text-indent: 30px;
+
+}
+section.limpa{
     min-width: 300px;
     max-width: 800px;
     background-color: white;
     margin: auto;
     margin: auto;
-    margin-bottom: 30px;
-    padding: 20px;
+    
 }
+section.imagem{
+    min-width: 300px;
+    max-width: 800px;
+    background-color: gray;
+    color: white;
+    margin: auto;
+    margin: auto;  
+}
+section.imagem>p{
+    width: 320px;
+    background-color: rgba(0, 0, 0, 0.377);
+    padding: 10px;
+}
+
 main h1 {
     color: var(--cor4);
+    line-height: 1.5em;
+    padding-left: 30px;
+   
+
 }
 main h2{
     color: var(--cor4);
     background-image: linear-gradient(to right, var(--cor3), transparent);
 }
 footer{
-    background-color: white;
+    background-color: var(--cor5);
+    color: var(--cor1);
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor2);
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor5);
+    background-color: var(--cor3);
+    padding: 2px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
 }
