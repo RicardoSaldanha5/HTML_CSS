@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
 :root {
 
     --cor1:#E0DFDB;
@@ -9,11 +11,13 @@
     --cor5:#231610;
 
     --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-aside: "DM Serif Display", serif; peso da fonte: 400; estilo da fonte: normal;
 }
 
 *{
     margin: 0px;
     padding: 0px;
+    font-family: ;
 }
 
 html,body{
@@ -35,7 +39,7 @@ header h1{
     padding-bottom: 15px;
     color: var(--cor3);
     font-variant: small-caps;
-    font-size: 3em;
+    font-size: 10vw;
     text-shadow: 3px 3px 3px #e0dfdb49;
 }
 header p{
@@ -84,7 +88,7 @@ h1.titulo{
 section{
     padding-top: 7vh;
     padding-bottom: 10vh;
-    line-height: 2em;
+    line-height: 5.5vw;
     padding-left: 30px;
     text-indent: 30px;
 
@@ -109,18 +113,20 @@ section.imagem>p{
     width: 320px;
     background-color: rgba(0, 0, 0, 0.377);
     padding: 10px;
+    border-radius: 10px;
 }
 
 main h1 {
     color: var(--cor4);
     line-height: 1.5em;
     padding-left: 30px;
-   
-
 }
 main h2{
     color: var(--cor4);
     background-image: linear-gradient(to right, var(--cor3), transparent);
+}
+aside {
+    font-family: var(--font-aside);
 }
 footer{
     background-color: var(--cor5);
