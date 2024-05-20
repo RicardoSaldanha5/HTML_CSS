@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+        table{
+            width: 450px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        thead >tr >th{
+            position: sticky;
+            top: -1px;
+            background-color: blue;
+        }
+        caption{
+            font-size: 1.5em;
+            color: blueviolet;
+            padding: 10px;
+            font-weight: bold;
+            background-color: rgba(128, 128, 128, 0.411);
+        }
+        tbody>tr:nth-child(2n){
+            /*pode-se osar tambem os comandos odd e even ao invez de 2n para par e impar*/
+            background-color: lightblue;
+        }
+        tr{
+            
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot{
+            background-color: blue;
+            color: white;
+        }
+        td.num{
+            text-align: right;
+        }
+        td.conta{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+     <!--
+        Anatomia para tabelas grandes
+        CAPTION
+        Thead
+        tr, td, th
+            Tbody
+            tr, td, th
+                Tfoot
+                tr, td, th
+    -->
+    <table>
+        <caption>Habitantes em Portugal dos primeiros oito Municípios</caption>
+        <thead>
+            <tr>
+                <th scope="col" style="width: 5px;">Nº</th>
+                <th scope="col">Município</th>
+                <th scope="col" style="width: 50px;">População (2021)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="conta">1</td>
+                <td>Lisboa</td>
+                <td class="num">544 851</td>
+                
+            </tr>
+            <tr>
+                <td class="conta">2</td>
+                <td>Sintra</td>
+                <td class="num">385 954</td>
+            </tr>
+            <tr>
+                <td class="conta">3</td>
+                <td>Vila Nova de Gaia</td>
+                <td class="num">304 149</td>
+                
+            </tr>
+            <tr>
+                <td class="conta">4</td>
+                <td>Porto</td>
+                <td class="num">231 962</td>
+                
+            </tr>
+            <tr>
+                <td class="conta">5</td>
+                <td>Cascais</td>
+                <td class="num">214 134</td>
+                
+            </tr>
+            <tr>
+                <td class="conta">6</td>
+                <td>Loures</td>
+                <td class="num">201 646</td>
+                
+            </tr>
+            <tr>
+                <td class="conta">7</td>
+                <td>Braga</td>
+                <td class="num">193 333</td>
+            </tr>
+            <tr>
+                <td class="conta">8</td>
+                <td>Almada</td>
+                <td class="num">177 400</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td class="conta">-</td>
+                <th scope="row">Total de Habitantes</th>
+                <td><strong>2 039 643</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
