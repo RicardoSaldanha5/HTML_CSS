@@ -9,9 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="container">
             <h1>Casinha da Glória</h1>
             <p><strong>Desfruta da simplicidade e do charme rural com todo o conforto e encanto de um ambiente natural.</strong></p>
@@ -22,16 +24,21 @@
             </nav>
         </div>
     </header>
+
+    <button id="back-to-top" title="Voltar ao início">
+        <i class="fas fa-home"></i>
+    </button>
+
     <section id="galeria">
         <div class="container">
             <h2>A Casinha</h2>
             <div class="gallery">
-                <img src="imagens/foto1.jpg" alt="Foto 1">
-                <img src="imagens/foto2.jpg" alt="Foto 2">
-                <img src="imagens/foto3.jpg" alt="Foto 3">
-                <img src="imagens/foto4.jpg" alt="Foto 4">
-                <img src="imagens/foto5.jpg" alt="Foto 5">
-                <img src="imagens/foto6.jpg" alt="Foto 6">
+                <img src="imagens/01pisc.jpg" alt="Foto 1">
+                <img src="imagens/02chur.jpg" alt="Foto 2">
+                <img src="imagens/03sala.jpg" alt="Foto 3">
+                <img src="imagens/04coz.jpg" alt="Foto 4">
+                <img src="imagens/05qcasal.jpg" alt="Foto 5">
+                <img src="imagens/06qsolt.jpg" alt="Foto 6">
             </div>
         </div>
     </section>
@@ -178,11 +185,11 @@
 
         <section class="video">
             <div class="container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/k4IWp3zvLDo?si=Ndpvae13L49yss5L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/epd88r-Hno4?si=LGcmuT2_efudsJCz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
         <aside class="sidebar">
-            <div class="container">
+            <div class="container" id="história">
                 <h2>A Fascinante História da Silva</h2>
                 <h3>Caminha pelas Páginas da sua História</h3>
                 <p>Segundo os registros históricos, a <a href="https://www.uf-saojuliaoesilva.pt/freguesia/historia" target="_blank">Silva</a> já era uma paróquia instituída no século XII. Caminha pelas ruas pitorescas e imagina a vida na <strong>época medieval</strong>, quando os monges cistercienses do mosteiro galego de Oia ou de Tominho também percorriam esses mesmos caminhos. Em 1513, o papa Leão X aprovou uma permuta significativa, trazendo a Silva para a diocese de Braga. Esta mudança histórica, marcada por grande orgulho, ressoa na comunidade ainda hoje.</p>
@@ -194,10 +201,16 @@
                 <p>Não percas a oportunidade de admirar o <a href="https://www.heraldicacivica.pt/vln-silva.html#gsc.tab=0">brasão da Silva</a>. Ele apresenta uma enxó de negro, que representa o labor agrícola, e uma silva arrancada de verde, uma referência ao nome da freguesia. Este brasão encapsula o <strong>espírito trabalhador</strong> e a ligação íntima com a terra que define o caráter dos aldeões. Passeia pelos campos verdejantes e experimenta a paz e a beleza da vida rural.</p>
         
                 <p>Prepara-te para te apaixonares pela Silva, uma <strong>joia histórica</strong> que te convida a descobrir a sua história e a criar memórias duradouras. Estamos ansiosos para te receber na nossa terra mágica!</p>
-        
-                <p class="chamada"><a href="#" target="_blank">Visita o canal e descobre mais sobre a História da Loucura.</a></p>
             </div>
         </aside>
+
+        <section id="reservation" class="reservation-section">
+            <div class="container">
+                <p class="chamada">
+                    <a href="#" target="_blank" class="highlight-button">Faz a tua RESERVA.</a>
+                </p>
+            </div>
+        </section>
         <section id="contactos">
             <div class="container">
                 <h2>Contactos</h2>
@@ -211,9 +224,39 @@
         </section>
     </main>
     <footer>
-        <div class="container">
-            <p>Site criado por <a href="https://www.youtube.com/channel/UC5YM_eNiVAJRVOISHLE1h2Q" target="_blank"><strong>Ricardo Saldanha</strong></a> para o <a href="https://www.cursoemvideo.com" target="_blank"><strong>Cursoemvídeo</strong></a></p>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#location">Localização</a>
+                <a href="#rules">Regulamentos do Alojamento</a>
+                <a href="#safety">Segurança</a>
+                <a href="#história">História da Silva</a>
+                <a href="#reservation">Reserva</a>
+            </div>
+            <div class="footer-contact">
+                <h3>Contactos</h3>
+                <p>
+                    <a href="https://www.facebook.com/profile.php?id=61550520021293" target="_blank">
+                        <i class="fab fa-facebook"></i> Facebook
+                    </a>
+                    <a href="https://www.instagram.com/casinhadagloria1934?igsh=MTVpcXhnNTM2dGIxag==" target="_blank">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    <a href="tel:+351 963 734 561">
+                        <i class="fas fa-phone"></i> +351 963 734 561
+                    </a>
+                    <a href="mailto:casinhadagloria1209@gmail.com.com">
+                        <i class="fas fa-envelope"></i> info@casinhadagloria.com
+                    </a>
+                </p>
+            </div>
         </div>
     </footer>
+    <script>
+        document.getElementById('back-to-top').addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        </script>
 </body>
 </html>
